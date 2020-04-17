@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700|Staatliches');
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-weight: 200;
+    color: #707070;
+    margin: 0 auto;
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(180deg, #C92D08, #D86F37);
+}
+
+h1 {
+    font-weight: 300;
+  text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.2);
+}
+h2 {
+   color: #fff;
+   font-weight: 300;
+   margin-left:10%;
+}
+
+button {
+    height: 48px;
+    padding: 10px 20px;
+    border-radius: 40px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+    color: #707070;
+    font-weight: 300;
+    min-width: 150px;
+    font-size: 1em;
+    border: none;
+    display: block;
+    text-align: center;
+    transition: all 0.25s;
+    ;
+}
+
+button:hover {
+    transform: translateY(1px);
+    background: #fafafa;
+    height: 46px;
+}
+
+button.reset {
+    position: absolute;
+    left: 40px;
+    top: 30px;
+}
+
+button.rollDice {
+    position: absolute;
+    left: 16%;
+    /*right: 50%;*/
+    bottom: 160px;
+}
+button.restart {
+    position: absolute;
+    top:80%;
+    left:38%;
+   /* left: 44%;
+    right: 50%;*/
+    bottom: 65px;
+    /*display: none;*/
+}
+
+/*-----------------container-------------*/
+.wrapper {
+    position: relative;
+    width: 90%;
+    height: 80%;
+    border-radius: 5px;
+    margin: 5% auto;
+    background: white;
+    box-shadow: 0px 0px 90px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: 100%;
+
+}
+
+/*------------Player panel--------*/
+[class|=player-panel] {
+    text-align: center;
+    display: grid;
+    grid-template-rows: auto;
+    grid-row-gap: 10px;
+    padding-top: 100px;
+}
+
+/*-----------Player background-------------*/
+
+.current-player {
+
+    background: linear-gradient(180deg, #FA9965, #F86363);
+}
+
+.current-player > h1 {
+    color: #fff;
+}
